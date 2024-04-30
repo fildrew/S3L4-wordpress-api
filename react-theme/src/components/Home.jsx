@@ -73,7 +73,7 @@ const Home = () => {
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>
-                        {/* <img
+                        <img
                             src={
                                 post._embedded['wp:featuredmedia']
                                     ? post._embedded['wp:featuredmedia'][0]
@@ -81,7 +81,7 @@ const Home = () => {
                                     : '/assets/picsum53.jpg'
                             }
                             alt=""
-                        /> */}
+                        /> 
                         <Link to={`/posts/${post.id}`}>
                             {post.title.rendered}
                         </Link>
